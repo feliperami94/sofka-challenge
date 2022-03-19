@@ -1,0 +1,35 @@
+{
+  "name": "trivia_felipe_ramirez",
+  "version": "1.0.0",
+  "description": "challenge for sofka u",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feliperami94/sofka-challenge.git"
+  },
+  "keywords": [
+    "challenge",
+    "mysql",
+    "javascript"
+  ],
+  "author": "Felipe Ramirez <felipe.ramirezrivera@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feliperami94/sofka-challenge/issues"
+  },
+  "homepage": "https://github.com/feliperami94/sofka-challenge#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
