@@ -7,16 +7,16 @@ var connection = mysql.createConnection({ //Establish a connection. My database 
     password: 'Fr3122259225'
 });
 
-async function getQuestionsDB() {
+async function userUpdateLevel(newUserLevel, currentPlayer) {
     return new Promise(function(resolve, reject) {
-        connection.query(`SELECT * FROM questions`, (error, results) => {
+        connection.query(`UPDATE users SET userLevel = ${newUserLevel} WHERE userName = "${currentPlayer}"`, (error, results) => {
         if(error){
             return reject(error);
         } else {
             if (results && results.length > 0) {
                 resolve(results); 
             }else {
-                resolve("The Question Database is empty, contact the developer")
+                resolve("Unable to continue to the next level due to problems with the database update")
             }
             
         }
@@ -24,4 +24,4 @@ async function getQuestionsDB() {
     })
 }
 
-module.exports = getQuestionsDB;
+module.exports = userUpdateLevel;

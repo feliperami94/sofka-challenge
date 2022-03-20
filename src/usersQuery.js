@@ -17,32 +17,26 @@ async function usersQuery(player) {
         if(error){
             return reject(error);
         } else {
-            if (results && results.length > 0) {
+
+            if (results && results.length > 0) { //This happens when the user already exists
                resolve(results); 
-            }else {
-                newUserInsert(player);
-                usersQuery(player);
+            }else { //This happens when the user needs to be created in the database
+
+                let query = `INSERT INTO users (userName) VALUES (?);`;
+                let userNamedb = player;
+                connection.query(query, [userNamedb], (err, rows) => {
+                    if (err) {throw err}
+                    else{console.log("User created succesfully");}
+                    });
+                    connection.query(`SELECT * FROM users WHERE userName = "${player}"`, (error, results) => {
+                    resolve(results)});
+
             }
             
         }
         });
     })
 }
-
-function newUserInsert(player){
-    let query = `INSERT INTO users (userName) VALUES (?);`;
-    // Value to be inserted
-    let userNamedb = player;
-    // Creating queries
-    connection.query(query, [userNamedb], (err, rows) => {
-        if (err) {
-            throw err
-        } else{
-            console.log("User created succesfully");
-        }
-    });
-};
-
 
 
 module.exports = usersQuery;
