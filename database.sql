@@ -49,3 +49,9 @@ VALUES
 ('¿Qué lee un quiromante para predecir el futuro?', 5,'El café', 'Los caracoles', 'Las líneas de la mano', 'El tabaco', 2),
 ('¿Cuántas zonas horarias tiene Rusia?', 5,'7', '8', '13', '11', 3),
 ('¿Cuántos kilometros de largo tiene aproximadamente la cordillera de Los Andes?', 5,'3500', '7000', '12000', '16000', 1);
+
+CREATE TABLE users(
+    user_id INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    userName VARCHAR(50) UNIQUE NOT NULL ,
+    userLevel TINYINT(3) NOT NULL DEFAULT 1
+);

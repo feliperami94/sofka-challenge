@@ -27,7 +27,8 @@
     "express": "^4.17.3",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
