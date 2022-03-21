@@ -2,14 +2,7 @@
 const express = require('express');
 const app = express(); //Creates the express server
 const nameInput = require("./inputfunc"); // Load a function to receive the username as input
-var mysql = require('mysql2'); //Load the mysql client for node.js
-//mysql connection
-var connection = mysql.createConnection({ //Establish a connection. My database is local.
-    host: 'localhost',
-    database: 'questions_db',
-    user: 'root',
-    password: 'Fr3122259225'
-});
+
 
 //Import custom modules for queries of the database and user inputs.
 const usersQuery = require("./usersQuery");
