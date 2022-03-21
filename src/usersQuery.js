@@ -20,6 +20,7 @@ async function usersQuery(player) {
 
             if (results && results.length > 0) { //This happens when the user already exists
                resolve(results); 
+               console.log(`Player status loaded`);
             }else { //This happens when the user needs to be created in the database
 
                 let query = `INSERT INTO users (userName) VALUES (?);`;

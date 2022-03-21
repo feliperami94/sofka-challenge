@@ -16,39 +16,39 @@ CREATE TABLE questions(
 INSERT INTO questions(question, q_level, ans_A, ans_B, ans_C, ans_D, correct_ans)
 VALUES
 
-('1. ¿Aproximadamente, qué porcentaje de la superficie de la Tierra es agua?', 1,'15%', '20%', '8%', '70%', 3),
-('1. ¿Cual es la capital de Antioquia, Colombia?', 1,'Apartadó', 'Tunja', 'Medellín', 'Bogotá', 2),
-('1. ¿País que se encuentra al este de Chile?', 1,'Argentina', 'Brasil', 'México', 'Panamá', 0),
-('1. Según el refran, ¿quien es ciego?', 1,'La tristeza', 'El amor', 'La vecina', 'El cirujano', 1),
-('1. En que país nació el autor Gabriel García Márquez', 1,'Venezuela', 'Ecuador', 'Bolivia', 'Colombia', 3),
+("1. About what percentage of the Earth's surface is water??", 1,'15%', '20%', '8%', '70%', 3),
+('1. What is the capital of Antioquia, Colombia?', 1,'Apartadó', 'Tunja', 'Medellín', 'Bogotá', 2),
+('1. Country to the east of Chile?', 1,'Argentina', 'Brazil', 'Mexico', 'Panama', 0),
+('1. What does “www” stand for in a website browser?', 1,'Nothing', 'World Wide Web', 'Web Wide World', 'World Will Web', 1),
+('1. In which country was the author Gabriel García Márquez born?', 1,'Venezuela', 'Ecuador', 'Bolivia', 'Colombia', 3),
 
 
-('2. ¿Cómo se llama el libro sagrado de la cultura Islámica?', 2,'Talmud', 'Torá', 'Corán', 'Kojiki', 2),
-('2. ¿Se dice que una persona está famelica cuando está?', 2,'Hambrienta', 'Cansada', 'Enamorada', 'Asustada', 0),
-('2. ¿El albinismo se manifiesta por carencia de?', 2,'Calcio', 'Pigmentación', 'Sol', 'Oxigeno', 1),
-('2. ¿El timbal es un instrumento de?', 2,'Cuerdas', 'Viento Metal', 'Percusión', 'Viento Maderas', 2),
-('2. En la mitología griega, ¿Eros es considerado el dios del?', 2,'Odio', 'Miedo', 'Trabajo', 'Amor', 3),
+('2. What is the name of the holy book of Islamic culture?', 2,'Talmud', 'Torah', 'Koran', 'Kojiki', 2),
+('2. Someone is said to be famished when:', 2,'Hungry', 'Tired', 'In love', 'Afraid', 0),
+('2. Albinism is manifested by lack of?', 2,'Calcium', 'Pigmentation', 'Sun', 'Oxygen', 1),
+('2. What kind of musical instrument is the timpani?', 2,'Strings', 'Brasswind', 'Percussion', 'Woodwind', 2),
+('2. In the greek mythology, ¿Eros was considered the god of?', 2,'Hate', 'Fear', 'Work', 'Love', 3),
 
 
-('3. ¿Cuál de estos animales es un rumiante?', 3,'Ardilla', 'Caracol', 'Loro', 'Vaca', 3),
-('3. ¿Se dice que una persona está famelica cuando está?', 3,'Hambrienta', 'Cansada', 'Enamorada', 'Asustada', 0),
-('3. ¿Cuál es el significado del prefijo "epi-"?', 3,'Alrededor', 'Episodio', 'Sobre', 'Inferior', 2),
-('3. ¿Qué parte del cuerpo se examina en una encefalografía?', 3,'Ovarios', 'Cráneo', 'Pulmones', 'Hígado', 1),
-('3. El Tour de Francia es una famosa competencia de:', 3,'Golf', 'Fútbol', 'Ciclismo', 'Automovilismo', 2),
+('3. Which of these animals is a ruminant?', 3,'Squirrel', 'Snail', 'Parrot', 'Cow', 3),
+('3. How long is an Olympic swimming pool (in meters)??', 3,'50m', '70m', '100m', '200m', 0),
+('3. What geometric shape is generally used for stop signs?', 3,'Circle', 'Hexagon', 'Octagon', 'Triangle', 2),
+('3. What part of the body is examined in an encephalography?', 3,'Lungs', 'Skull', 'Kidney', 'Heart', 1),
+('3. The Tour de France is a famous competition of:', 3,'Golf', 'Soccer', 'Cycling', 'Triathlon', 2),
 
 
-('4. ¿Qué clase de palabra es "según"?', 4,'Verbo', 'Preposición', 'Adjetivo', 'Sustantivo', 1),
-('4. ¿Qué elemento químico es representado por el símbolo "P"?', 4,'Bromo', 'Boro', 'Rubidio', 'Fósforo', 3),
-('4. ¿Cuál de estos nombres no aparece en el título de una obra de Shakespeare?', 4,'Hamlet', 'Romeo', 'Darren', 'Macbeth', 2),
-('4. ¿Cuál es la capital de Canadá?', 4,'Toronto', 'Vancouver', 'Ottawa', 'Montreal', 2),
-('4. ¿Cuántas franjas tiene la bandera de Estados Unidos?', 4,'13', '8', '12', '15', 0),
+('4. How many languages are written from right to left?', 4,'6', '12', '18', '9', 1),
+('4. What chemical element is represented by the symbol "P"?', 4,'Bromine', 'Boron', 'Rubidium', 'Phosphorus', 3),
+('4. Which of these names does not appear in the title of a play by Shakespeare??', 4,'Hamlet', 'Romeo', 'Darren', 'Macbeth', 2),
+('4. Which is the capital of Canada?', 4,'Toronto', 'Vancouver', 'Ottawa', 'Montreal', 2),
+('4. How many stripes does the United States flag have?', 4,'13', '8', '12', '15', 0),
 
 
-('5. ¿Dónde se desarrolló la civilización etrusca?', 5,'Península Itálica', 'Caucaso', 'Norte de África', 'Extremo Oriente', 0),
-('5. Es el espacio de tiempo durante el cual un Estado no tiene soberano', 5, 'Internodio', 'Interregno', 'Internuncio', 'Intermezzo', 1),
-('5. ¿Qué lee un quiromante para predecir el futuro?', 5,'El café', 'Los caracoles', 'Las líneas de la mano', 'El tabaco', 2),
-('5. ¿Cuántas zonas horarias tiene Rusia?', 5,'7', '8', '13', '11', 3),
-('5. ¿Cuántos kilometros de largo tiene aproximadamente la cordillera de Los Andes?', 5,'3500', '7000', '12000', '16000', 1);
+('5. Where did the Etruscan civilization develop?', 5,'Italian Peninsula', 'Caucasus', 'North of Africa', 'Far East', 0),
+('5. Who was the first woman to win a Nobel Prize (in 1903)?', 5, 'Maria Goeppert Mayer', 'Marie Curie', 'Emmanuelle Charpentier', 'Dorothy Crowfoot Hodgkin', 1),
+('5. The demolition of the Berlin wall separating East and West Germany began in what year?', 5,'1983', '1992', '1989', '1978', 2),
+('5. How many time zones does Russia have?', 5,'7', '8', '13', '11', 3),
+('5. Approximately how many kilometers long is the Andes mountain range??', 5,'3500', '7000', '12000', '16000', 1);
 
 CREATE TABLE users(
     user_id INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,

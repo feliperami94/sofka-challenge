@@ -5,7 +5,7 @@ const rl = readline.createInterface({input: process.stdin,
 
 function userGuess_input() {
     return new Promise((resolve, reject) => {
-        rl.question("Enter just one letter(a, b, c or d): ", (input) => resolve(input) );
+        rl.question("Enter just one letter(a, b, c, d or x to exit and continue later): ", (input) => resolve(input) );
     });
 }
 
