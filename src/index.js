@@ -45,7 +45,10 @@ function selectQuestion(questionsDB){
             levelQuestions.push(questionsDB[i]);    
         }  
     }
-    playQuestion()
+    setTimeout(() => {
+        playQuestion()
+    }, 2000);
+    
         
 };
 
@@ -74,12 +77,15 @@ async function playQuestion()  {
             case "d":
                 userGuessNumber = 3;
                 break;
+            default:
+                userGuessNumber = 4;
+                break;
         }
         if (userGuessNumber == levelQuestions[randNumb].correct_ans) {
         console.log("Correct answer! You go to the next level")
             let newUserLevel = level + 1;
             if(newUserLevel <= 5) {
-                userUpdateLevel(newUserLevel, currentPlayer);
+                userUpdateLevel(newUserLevel, `${currentPlayer[0].userName}`);
                 levelQuestions = [];
                 currentPlayer[0].userLevel = newUserLevel;
                 selectQuestion(questionsDB);
