@@ -4,7 +4,7 @@ var connection = mysql.createConnection({ //Establish a connection. My database 
     host: 'localhost',
     database: 'questions_db',
     user: 'root',
-    password: 'Fr3122259225'
+    password: ''
 });
 
 async function userUpdateLevel(newUserLevel, currentPlayer) {
